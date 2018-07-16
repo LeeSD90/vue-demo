@@ -16,7 +16,7 @@ export default {
     fetchGithubData(name) {
       if(this.githubData.hasOwnProperty(name)) return
 
-      const url = "https://api.github.com/users/${name}"
+      const url = `https://api.github.com/users/${name}`
 
       fetch(url).then(r => r.json()).then(data => {
         Vue.set(this.githubData, name, data)
