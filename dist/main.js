@@ -127,7 +127,19 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"p\", [_vm._v(\"Hello World\")])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/App/template.html?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    [_c(\"p\", [_vm._v(\"Hello World\")]), _vm._v(\" \"), _c(\"github-input\")],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/App/template.html?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"p\", [_vm._v(\"github input\")])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/GithubInput/template.html?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options");
 
 /***/ }),
 
@@ -174,7 +186,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App/index.vue */ \"./src/components/App/index.vue\");\n\r\n\r\n\r\n\r\n\r\nconst vm = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  el: '#app',\r\n  components: {\r\n    app: _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n  },\r\n  render: h => h('app')\r\n})\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App/index.vue */ \"./src/components/App/index.vue\");\n\r\n\r\n\r\n\r\nconst vm = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  el: '#app',\r\n  components: {\r\n    app: _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n  },\r\n  render: h => h('app')\r\n})\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -198,7 +210,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  name: 'App',\r\n  data() {\r\n    return {}\r\n  },\r\n});\n\n//# sourceURL=webpack:///./src/components/App/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _GithubInput_index_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../GithubInput/index.vue */ \"./src/components/GithubInput/index.vue\");\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  name: 'App',\r\n  components: {\r\n    'github-input': _GithubInput_index_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\r\n  },\r\n  data() {\r\n    return {}\r\n  },\r\n});\n\n//# sourceURL=webpack:///./src/components/App/script.js?");
 
 /***/ }),
 
@@ -246,6 +258,77 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_40640df7_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./template.html?vue&type=template&id=40640df7&scoped=true */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/App/template.html?vue&type=template&id=40640df7&scoped=true\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_40640df7_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_40640df7_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/App/template.html?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/index.vue":
+/*!**********************************************!*\
+  !*** ./src/components/GithubInput/index.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./template.html?vue&type=template&id=2d839dfd&scoped=true */ \"./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true\");\n/* harmony import */ var _script_js_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.js?vue&type=script&lang=js */ \"./src/components/GithubInput/script.js?vue&type=script&lang=js?eab1\");\n/* empty/unused harmony star reexport *//* harmony import */ var _style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css */ \"./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css?b157\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _script_js_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  \"2d839dfd\",\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src\\\\components\\\\GithubInput\\\\index.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./src/components/GithubInput/index.vue?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/script.js?vue&type=script&lang=js?11b3":
+/*!**********************************************************************!*\
+  !*** ./src/components/GithubInput/script.js?vue&type=script&lang=js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  name: 'GithubInput',\r\n  data() {\r\n    return {\r\n      username: '',\r\n    }\r\n  }\r\n});\n\n//# sourceURL=webpack:///./src/components/GithubInput/script.js?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/script.js?vue&type=script&lang=js?eab1":
+/*!**********************************************************************!*\
+  !*** ./src/components/GithubInput/script.js?vue&type=script&lang=js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _script_js_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./script.js?vue&type=script&lang=js */ \"./src/components/GithubInput/script.js?vue&type=script&lang=js?11b3\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_script_js_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./src/components/GithubInput/script.js?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css?b157":
+/*!******************************************************************************************************!*\
+  !*** ./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css */ \"./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css?c5db\");\n/* harmony import */ var _style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_style_css_vue_type_style_index_0_id_2d839dfd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./src/components/GithubInput/style.css?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css?c5db":
+/*!******************************************************************************************************!*\
+  !*** ./src/components/GithubInput/style.css?vue&type=style&index=0&id=2d839dfd&scoped=true&lang=css ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/components/GithubInput/style.css?");
+
+/***/ }),
+
+/***/ "./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true":
+/*!********************************************************************************************!*\
+  !*** ./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./template.html?vue&type=template&id=2d839dfd&scoped=true */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/GithubInput/template.html?vue&type=template&id=2d839dfd&scoped=true\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_template_html_vue_type_template_id_2d839dfd_scoped_true__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/GithubInput/template.html?");
 
 /***/ }),
 
