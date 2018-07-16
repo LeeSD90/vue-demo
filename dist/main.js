@@ -139,7 +139,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"p\", [_vm._v(\"github input\")])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/GithubInput/template.html?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"form\",\n    {\n      on: {\n        submit: function($event) {\n          $event.preventDefault()\n          return _vm.onSubmit($event)\n        }\n      }\n    },\n    [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.username,\n            expression: \"username\"\n          }\n        ],\n        attrs: { type: \"text\", placeholder: \"Enter a github username here\" },\n        domProps: { value: _vm.username },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.username = $event.target.value\n          }\n        }\n      }),\n      _vm._v(\" \"),\n      _c(\"button\", { attrs: { type: \"submit\" } }, [_vm._v(\"Go!\")])\n    ]\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/GithubInput/template.html?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options");
 
 /***/ }),
 
@@ -187,6 +187,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App/index.vue */ \"./src/components/App/index.vue\");\n\r\n\r\n\r\n\r\nconst vm = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  el: '#app',\r\n  components: {\r\n    app: _components_App_index_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n  },\r\n  render: h => h('app')\r\n})\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/bus.js":
+/*!********************!*\
+  !*** ./src/bus.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n\r\n\r\nconst bus = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (bus);\n\n//# sourceURL=webpack:///./src/bus.js?");
 
 /***/ }),
 
@@ -281,7 +293,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  name: 'GithubInput',\r\n  data() {\r\n    return {\r\n      username: '',\r\n    }\r\n  }\r\n});\n\n//# sourceURL=webpack:///./src/components/GithubInput/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../bus */ \"./src/bus.js\");\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  name: 'GithubInput',\r\n  methods: {\r\n    onSubmit(event) {\r\n      if(this.username && this.username !== ''){\r\n        _bus__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$emit('new-username', this.username)\r\n      }\r\n    }\r\n  },\r\n  data() {\r\n    return {\r\n      username: '',\r\n    }\r\n  }\r\n});\n\n//# sourceURL=webpack:///./src/components/GithubInput/script.js?");
 
 /***/ }),
 
