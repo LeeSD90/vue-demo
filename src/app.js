@@ -2,8 +2,6 @@ import Vue from 'vue'
 
 import AppComponent from './components/App/index.vue'
 
-window.Vue = Vue;
-
 const vm = new Vue({
   el: '#app',
   components: {
